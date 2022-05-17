@@ -27,7 +27,7 @@ public class TrackersController {
 
     @GetMapping()
     public String getAllTrackers(Model taskTrackModel) {
-        taskTrackModel.addAttribute("trackers", taskTrackerDAO.getAllTrackers);
+        taskTrackModel.addAttribute("trackers", taskTrackerDAO.getAllTrackers());
         return "trackers/alltrack";
     }
 
